@@ -41,7 +41,7 @@
   , to: function (pos) {
       var $active = this.$element.find('.active')
         , $children = $active.parent().children()
-        , activePos = $children.index($active)
+        , activePos = $children.index($active) + 1
         , $child = $children.filter(':nth-child(' + pos + ')')
         , that = this
 
